@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &547104292606266261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1569104559974305622}
+  - component: {fileID: 7217178462159755658}
+  m_Layer: 0
+  m_Name: Player_2
+  m_TagString: Player1
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1569104559974305622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547104292606266261}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7217178462159755658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547104292606266261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f39b3df760448d74db3d9746e7425fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Map: {fileID: 0}
+  GameManager: {fileID: 0}
+  BoatPrefabs:
+  - {fileID: 3677834751454299257, guid: bf0090995f6e800419ad5f439cbaebd9, type: 3}
+  - {fileID: 3677834751454299257, guid: b1d1af6fe478f9b489648bae7634deac, type: 3}
+  - {fileID: 3677834751454299257, guid: 6175bb44ece48d64fb3f96b05e8bf3b6, type: 3}
+  Boat: {fileID: 0}
+  BoatScript: {fileID: 0}
+  FloatScript: {fileID: 0}
+  FishFactory: {fileID: 0}
+  BoatSpeedDock: {fileID: 0}
+  BoatUpgradeDock: {fileID: 0}
+  CargoSpaceDock: {fileID: 0}
+  FishingSpeedDock: {fileID: 0}
+  Money: 0
+  FishCount: 0
+  CargoSpace: 20
+  CatchRate: 1
+  CatchRadius: 5
+  FishingSpeedUpgradeCost: 100
+  BoatSpeedUpgradeCost: 100
+  BoatUpgradeCost: 100
+  CargoSpaceUpgradeCost: 100

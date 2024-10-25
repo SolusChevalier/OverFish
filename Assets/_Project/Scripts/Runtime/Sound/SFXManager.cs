@@ -9,11 +9,8 @@ public class SFXManager : MonoBehaviour
 
     public static SFXManager Instance;
 
-    public AudioClip buttonClick;
-    public AudioClip pause;
-    public AudioClip[] UnitDeath;
-    public AudioClip[] EnemyDamageSound;
-    public AudioClip[] EnemyAttackSound;
+    public AudioClip CargoUpgradeSFX, FishingSpeedUpgradeSFX, BoatSpeedUpgradeSFX, BoatUpgradeSFX, FishSellSfx;
+    public AudioClip CatchFishSFX;
 
     private AudioSource audioSource;
 
@@ -44,25 +41,8 @@ public class SFXManager : MonoBehaviour
 
     public void PlaySFX(AudioClip clip)
     {
+        audioSource.volume = 0.5f;
         audioSource.PlayOneShot(clip);
-    }
-
-    public void playEnemyDamage()
-    {
-        int rand = Random.Range(0, EnemyDamageSound.Length);
-        audioSource.PlayOneShot(EnemyDamageSound[rand]);
-    }
-
-    public void playEnemyAttack()
-    {
-        int rand = Random.Range(0, EnemyAttackSound.Length);
-        audioSource.PlayOneShot(EnemyAttackSound[rand]);
-    }
-
-    public void playUnitDeath()
-    {
-        int rand = Random.Range(0, UnitDeath.Length);
-        audioSource.PlayOneShot(UnitDeath[rand]);
     }
 
     #endregion METHODS

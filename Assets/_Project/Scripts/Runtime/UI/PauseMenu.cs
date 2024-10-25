@@ -55,21 +55,6 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void Retry()
-    {
-        Time.timeScale = 1f;
-        var random = new System.Random();
-        var scene = random.Next(1, 100);
-        if (scene % 2 == 0)
-        {
-            SceneManager.LoadScene(Scenes.Red1Blue2.ToString());
-        }
-        else
-        {
-            SceneManager.LoadScene(Scenes.Red2Blue1.ToString());
-        }
-    }
-
     public void QuitGame()
     {
         Application.Quit();

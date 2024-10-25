@@ -33,12 +33,12 @@ public class MusicManager : MonoBehaviour
     {
         switch (scene.name)
         {
-            case "StartMenu":
-                PlayMusic(mainMenuMusic);
+            case "MainMenu":
+                PlayMusic(mainMenuMusic, 0.1f);
                 break;
 
             case "Game":
-                PlayMusic(gameSceneMusic);
+                PlayMusic(gameSceneMusic, 0.1f);
                 break;
 
             default:
@@ -46,9 +46,10 @@ public class MusicManager : MonoBehaviour
         }
     }
 
-    private void PlayMusic(AudioClip clip)
+    private void PlayMusic(AudioClip clip, float volume)
     {
         audioSource.Stop();
+        audioSource.volume = volume;
         audioSource.clip = clip;
         audioSource.Play();
     }
