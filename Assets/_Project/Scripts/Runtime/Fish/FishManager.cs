@@ -31,7 +31,10 @@ public class FishManager : MonoBehaviour
     private void Update()
     {
         if (PodCount == 0 | CurrentFish <= 0 | MaxFishCapacity <= 0)
+        {
+            Debug.Log("Game Over: " + PodCount + " " + CurrentFish + " " + MaxFishCapacity);
             SceneManager.LoadScene("BadEnd");
+        }
     }
 
     public void EndGameGood()
@@ -41,7 +44,7 @@ public class FishManager : MonoBehaviour
 
     public void MorePods()
     {
-        if (CurrentFish == MaxFishCapacity)
+        if (CurrentFish >= MaxFishCapacity - 10)
             MaxFishCapacity += 2;
 
         if (CurrentFish < MaxFishCapacity)

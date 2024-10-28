@@ -38,27 +38,34 @@ public class FishPod : MonoBehaviour
         {
             SpawnFish();
         }
+        InvokeRepeating("MoreFish", 3, 5);
     }
 
     private void FixedUpdate()
     {
         timeSinceLastSpawn += Time.deltaTime;
-        if (FishCount < FishCapacity & timeSinceLastSpawn >= spawnRate & FishCount > 2)
+        if (FishCount < FishCapacity & timeSinceLastSpawn >= spawnRate & FishCount >= 2)
         {
             SpawnFish();
             timeSinceLastSpawn = 0f;
         }
-        if (FishCount < 2)
+        if (FishCount == 0)
         {
-            fishManager.CurrentFish -= FishCount;
+            //fishManager.CurrentFish -= FishCount;
             Destroy(gameObject);
         }
+    }
+
+    public void MoreFish()
+    {
+        if (FishCount >= FishCapacity - 5)
+            FishCapacity += 2;
     }
 
     private void OnDestroy()
     {
         fishManager.PodList.Remove(this);
-        fishManager.MaxFishCapacity -= FishCapacity;
+        fishManager.MaxFishCapacity = fishManager.CurrentFish;
         fishManager.PodCount--;
     }
 

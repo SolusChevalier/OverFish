@@ -119,7 +119,7 @@ public class Player_2 : MonoBehaviour
 
     public void HandleSpeedDocking()
     {
-        if (Money <= BoatSpeedUpgradeCost & Money > 0)
+        if (Money >= BoatSpeedUpgradeCost & Money > 0)
         {
             BoatSpeedParticles.Play();
             SFXManager.Instance.PlaySFX(SFXManager.Instance.BoatSpeedUpgradeSFX);
@@ -131,7 +131,7 @@ public class Player_2 : MonoBehaviour
 
     public void HandleUpgradeDocking()
     {
-        if (Money <= BoatUpgradeCost & BoatIndex <= 2 & Money > 0)
+        if (Money >= BoatUpgradeCost & BoatIndex <= 2 & Money > 0)
         {
             BoatUpgradeParticles.Play();
             SFXManager.Instance.PlaySFX(SFXManager.Instance.BoatUpgradeSFX);
@@ -144,13 +144,15 @@ public class Player_2 : MonoBehaviour
             BoatScript = Boat.GetComponent<Boat_P2>();
             FloatScript = Boat.GetComponent<Float>();
             BoatScript.Player_2 = this;
+            CargoSpace *= 2;
+            CatchRate -= 0.5f;
             BoatIndex++;
         }
     }
 
     public void HandleCargoDocking()
     {
-        if (Money <= CargoSpaceUpgradeCost & Money > 0)
+        if (Money >= CargoSpaceUpgradeCost & Money > 0)
         {
             CargoSpaceParticles.Play();
             SFXManager.Instance.PlaySFX(SFXManager.Instance.CargoUpgradeSFX);
@@ -162,13 +164,13 @@ public class Player_2 : MonoBehaviour
 
     public void HandleFishingRateDocking()
     {
-        if (Money <= FishingSpeedUpgradeCost & Money > 0)
+        if (Money >= FishingSpeedUpgradeCost & Money > 0)
         {
             FishingSpeedParticles.Play();
             SFXManager.Instance.PlaySFX(SFXManager.Instance.FishingSpeedUpgradeSFX);
             removeMoney(FishingSpeedUpgradeCost);
             FishingSpeedUpgradeCost *= 2;
-            CatchRate -= 0.5f;
+            CatchRate -= 0.2f;
         }
     }
 

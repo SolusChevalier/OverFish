@@ -5003,7 +5003,7 @@ MonoBehaviour:
   CatchRadius: 5
   SteerPower: 200
   Power: 5
-  MaxSpeed: 7
+  MaxSpeed: 5
   Drag: 5
   fishParticle: {fileID: 6016614866673922327}
 --- !u!65 &5302679329507907206

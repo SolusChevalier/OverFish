@@ -8,6 +8,7 @@ public class MusicManager : MonoBehaviour
 {
     #region FIELDS
 
+    public static MusicManager Instance;
     public AudioClip mainMenuMusic;
     public AudioClip gameSceneMusic;
     private AudioSource audioSource;
@@ -20,7 +21,17 @@ public class MusicManager : MonoBehaviour
 
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        // Singleton pattern
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
         audioSource = GetComponent<AudioSource>();
         SceneManager.sceneLoaded += OnSceneLoaded;
     }

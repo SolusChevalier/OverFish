@@ -152,12 +152,17 @@ PrefabInstance:
     - target: {fileID: 1522196874102141374, guid: 4f5d492e46ddbf741a34538774fffffb,
         type: 3}
       propertyPath: orthographic
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1522196874102141374, guid: 4f5d492e46ddbf741a34538774fffffb,
         type: 3}
       propertyPath: field of view
       value: 73
+      objectReference: {fileID: 0}
+    - target: {fileID: 1522196874102141374, guid: 4f5d492e46ddbf741a34538774fffffb,
+        type: 3}
+      propertyPath: orthographic size
+      value: 35.6
       objectReference: {fileID: 0}
     - target: {fileID: 1522196874102141374, guid: 4f5d492e46ddbf741a34538774fffffb,
         type: 3}
@@ -187,22 +192,22 @@ PrefabInstance:
     - target: {fileID: 3795741890638185603, guid: 4f5d492e46ddbf741a34538774fffffb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 46
+      value: 37.8
       objectReference: {fileID: 0}
     - target: {fileID: 3795741890638185603, guid: 4f5d492e46ddbf741a34538774fffffb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7
+      value: -23.1
       objectReference: {fileID: 0}
     - target: {fileID: 3795741890638185603, guid: 4f5d492e46ddbf741a34538774fffffb,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7539076
+      value: 0.87164193
       objectReference: {fileID: 0}
     - target: {fileID: 3795741890638185603, guid: 4f5d492e46ddbf741a34538774fffffb,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.6569805
+      value: 0.49014324
       objectReference: {fileID: 0}
     - target: {fileID: 3795741890638185603, guid: 4f5d492e46ddbf741a34538774fffffb,
         type: 3}
@@ -217,7 +222,7 @@ PrefabInstance:
     - target: {fileID: 3795741890638185603, guid: 4f5d492e46ddbf741a34538774fffffb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 82.14
+      value: 58.7
       objectReference: {fileID: 0}
     - target: {fileID: 3795741890638185603, guid: 4f5d492e46ddbf741a34538774fffffb,
         type: 3}
@@ -233,6 +238,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cam
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602926270760222708, guid: 4f5d492e46ddbf741a34538774fffffb,
+        type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -292,7 +302,7 @@ PrefabInstance:
     - target: {fileID: 2998304919146381168, guid: a9b7b4d18ea4cc54bae049e384562a19,
         type: 3}
       propertyPath: spawnRate
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2998304919146381168, guid: a9b7b4d18ea4cc54bae049e384562a19,
         type: 3}
@@ -585,6 +595,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2619893408917616904, guid: f67c52e83f7c12442b3e8614203e3ad3,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619893408917616904, guid: f67c52e83f7c12442b3e8614203e3ad3,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619893408917616904, guid: f67c52e83f7c12442b3e8614203e3ad3,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5497181548498812351, guid: f67c52e83f7c12442b3e8614203e3ad3,
         type: 3}
       propertyPath: m_Size.x
@@ -835,7 +860,7 @@ PrefabInstance:
     - target: {fileID: 2998304919146381168, guid: a9b7b4d18ea4cc54bae049e384562a19,
         type: 3}
       propertyPath: spawnRate
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2998304919146381168, guid: a9b7b4d18ea4cc54bae049e384562a19,
         type: 3}
@@ -936,7 +961,7 @@ PrefabInstance:
     - target: {fileID: 2998304919146381168, guid: a9b7b4d18ea4cc54bae049e384562a19,
         type: 3}
       propertyPath: spawnRate
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2998304919146381168, guid: a9b7b4d18ea4cc54bae049e384562a19,
         type: 3}
@@ -1153,7 +1178,7 @@ PrefabInstance:
     - target: {fileID: 2998304919146381168, guid: a9b7b4d18ea4cc54bae049e384562a19,
         type: 3}
       propertyPath: spawnRate
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2998304919146381168, guid: a9b7b4d18ea4cc54bae049e384562a19,
         type: 3}
@@ -1262,6 +1287,11 @@ PrefabInstance:
       objectReference: {fileID: 1978268370}
     - target: {fileID: 35086218458784422, guid: 9ac9ac8828e242e47b7b0ec9d4fcf4c6,
         type: 3}
+      propertyPath: CatchRadius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 35086218458784422, guid: 9ac9ac8828e242e47b7b0ec9d4fcf4c6,
+        type: 3}
       propertyPath: FishManager
       value: 
       objectReference: {fileID: 605586699}
@@ -1292,14 +1322,29 @@ PrefabInstance:
       objectReference: {fileID: 524746690}
     - target: {fileID: 35086218458784422, guid: 9ac9ac8828e242e47b7b0ec9d4fcf4c6,
         type: 3}
+      propertyPath: BoatSpeedUpgradeCost
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 35086218458784422, guid: 9ac9ac8828e242e47b7b0ec9d4fcf4c6,
+        type: 3}
       propertyPath: BoatUpgradeParticles
       value: 
       objectReference: {fileID: 1323862797}
     - target: {fileID: 35086218458784422, guid: 9ac9ac8828e242e47b7b0ec9d4fcf4c6,
         type: 3}
+      propertyPath: CargoSpaceUpgradeCost
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 35086218458784422, guid: 9ac9ac8828e242e47b7b0ec9d4fcf4c6,
+        type: 3}
       propertyPath: FishingSpeedParticles
       value: 
       objectReference: {fileID: 1325778955}
+    - target: {fileID: 35086218458784422, guid: 9ac9ac8828e242e47b7b0ec9d4fcf4c6,
+        type: 3}
+      propertyPath: FishingSpeedUpgradeCost
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 547104292606266261, guid: 9ac9ac8828e242e47b7b0ec9d4fcf4c6,
         type: 3}
       propertyPath: m_Name
@@ -1371,7 +1416,7 @@ PrefabInstance:
     - target: {fileID: 2998304919146381168, guid: a9b7b4d18ea4cc54bae049e384562a19,
         type: 3}
       propertyPath: spawnRate
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2998304919146381168, guid: a9b7b4d18ea4cc54bae049e384562a19,
         type: 3}
@@ -1604,14 +1649,29 @@ PrefabInstance:
       objectReference: {fileID: 1205270485}
     - target: {fileID: 7217178462159755658, guid: 44f765724edfe48438b20b4e10c353f3,
         type: 3}
+      propertyPath: BoatSpeedUpgradeCost
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7217178462159755658, guid: 44f765724edfe48438b20b4e10c353f3,
+        type: 3}
       propertyPath: BoatUpgradeParticles
       value: 
       objectReference: {fileID: 793531238}
     - target: {fileID: 7217178462159755658, guid: 44f765724edfe48438b20b4e10c353f3,
         type: 3}
+      propertyPath: CargoSpaceUpgradeCost
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7217178462159755658, guid: 44f765724edfe48438b20b4e10c353f3,
+        type: 3}
       propertyPath: FishingSpeedParticles
       value: 
       objectReference: {fileID: 360086232}
+    - target: {fileID: 7217178462159755658, guid: 44f765724edfe48438b20b4e10c353f3,
+        type: 3}
+      propertyPath: FishingSpeedUpgradeCost
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1625,6 +1685,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4365785426096556918, guid: 9e6a307a47121e14580ceb6854fe9281,
+        type: 3}
+      propertyPath: Dimensions
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 4365785426096556918, guid: 9e6a307a47121e14580ceb6854fe9281,
         type: 3}
       propertyPath: Octaves.Array.data[0].Height
@@ -1668,7 +1733,7 @@ PrefabInstance:
     - target: {fileID: 5242308715575581336, guid: 9e6a307a47121e14580ceb6854fe9281,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -68
+      value: -77.6
       objectReference: {fileID: 0}
     - target: {fileID: 5242308715575581336, guid: 9e6a307a47121e14580ceb6854fe9281,
         type: 3}
@@ -1678,7 +1743,7 @@ PrefabInstance:
     - target: {fileID: 5242308715575581336, guid: 9e6a307a47121e14580ceb6854fe9281,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -56
+      value: -80.3
       objectReference: {fileID: 0}
     - target: {fileID: 5242308715575581336, guid: 9e6a307a47121e14580ceb6854fe9281,
         type: 3}
@@ -1795,6 +1860,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8320411987837365381, guid: bf0090995f6e800419ad5f439cbaebd9,
         type: 3}
+      propertyPath: MaxSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8320411987837365381, guid: bf0090995f6e800419ad5f439cbaebd9,
+        type: 3}
       propertyPath: Player_2
       value: 
       objectReference: {fileID: 813221791}
@@ -1826,7 +1896,7 @@ PrefabInstance:
     - target: {fileID: 2998304919146381168, guid: a9b7b4d18ea4cc54bae049e384562a19,
         type: 3}
       propertyPath: spawnRate
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2998304919146381168, guid: a9b7b4d18ea4cc54bae049e384562a19,
         type: 3}
